@@ -1,14 +1,14 @@
 {
-  "homepage": "https://Abiral1290.github.io/greenFuture_innovation_project",
+  "homepage": "https://aayush1248.github.io/idea-greenfuture",
   "name": "react_project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
