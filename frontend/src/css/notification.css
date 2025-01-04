@@ -1,0 +1,113 @@
+/* Container for notifications */
+.notifications-container {
+  position: relative;
+}
+
+/* Notifications button */
+.notifications-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #4a4a4a; /* Softer gray for the icon */
+  transition: color 0.3s ease;
+}
+
+.notifications-btn:hover {
+  color: #007bff; /* Blue on hover */
+}
+
+/* Badge showing number of notifications */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f44336; /* Red for the badge */
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Dropdown container for notifications */
+.notifications-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  width: 250px;
+  padding: 15px;
+  z-index: 10;
+  border-radius: 8px;
+  display: none; /* Hidden by default */
+}
+
+/* List inside dropdown */
+.notifications-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual notification item */
+.notifications-dropdown li {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for notifications */
+.notifications-dropdown li:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+/* Unread notifications */
+.notifications-dropdown li.unread {
+  background-color: #f9f9f9; /* Light background for unread */
+  font-weight: bold;
+  color: #333; /* Darker text for unread */
+}
+
+/* Read notifications */
+.notifications-dropdown li.read {
+  background-color: #e0e0e0; /* Soft gray for read */
+  color: #888; /* Light gray text */
+}
+
+/* Button to mark all notifications as read */
+.clear-notifications {
+  background-color: #28a745; /* Green button for clear */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for clear button */
+.clear-notifications:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+  .notifications-dropdown {
+    width: 200px; /* Smaller dropdown on smaller screens */
+  }
+
+  .notification-badge {
+    font-size: 10px; /* Smaller badge for mobile view */
+    padding: 4px;
+  }
+}
+

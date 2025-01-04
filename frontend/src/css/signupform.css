@@ -1,0 +1,165 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f3f3f3; /* Soft gray background */
+  background-image:('.src/assets/greenfuture.jpg'); /* Add your image path here */
+  background-size: cover; /* Makes the image cover the entire screen */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #333; /* Neutral text color */
+}
+
+
+/* SignUp Form Container */
+.signup-form {
+  background-color: #ffffff; /* Clean white background */
+  background-image: url('/src/assets/greenfuture.jpg'); /* Add your image path here */
+  background-size: cover; /* Makes the image cover the form */
+  background-position: center; /* Center the background image */
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 400px; /* Adjusted to a reasonable width for the form */
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+  margin: auto;
+  border: 1px solid #e0e0e0; /* Subtle border for structure */
+}
+
+
+.signup-form h2 {
+  color: #4a4a4a; /* Darker neutral text */
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #555555; /* Slightly muted text */
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #888888; /* Darker gray focus */
+  box-shadow: 0 0 4px rgba(136, 136, 136, 0.5); /* Subtle focus glow */
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #aaaaaa; /* Light gray placeholder */
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50; /* Muted green button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #43a047; /* Slightly darker green */
+  transform: translateY(-1px);
+}
+
+.submit-button:active {
+  background-color: #388e3c; /* Even darker green when clicked */
+  transform: translateY(0);
+}
+
+/* Alert Dialog */
+.alert-dialog {
+  color: #4caf50; /* Matching success green */
+  font-size: 16px;
+}
+
+/* Responsive Design */
+
+/* Medium Screens */
+@media (max-width: 768px) {
+  .signup-form {
+    padding: 20px;
+  }
+
+  .signup-form h2 {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .signup-form h2 {
+    font-size: 18px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .submit-button {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
